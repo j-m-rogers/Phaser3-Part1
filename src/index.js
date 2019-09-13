@@ -1,5 +1,6 @@
 /*global Phaser, window*/
 import BootScene from './scenes/BootScene.js';
+import GameOverScene from './scenes/GameOverScene.js';
 import Scene0 from './scenes/Scene0.js';
 import Scene1 from './scenes/Scene1.js';
 import Scene2 from './scenes/Scene2.js';
@@ -16,6 +17,7 @@ class Game extends Phaser.Game {
   constructor () {
     super(Config);
     this.scene.add('Boot', BootScene);
+    this.scene.add('GameOverScene', GameOverScene);
     this.scene.add('Scene0', Scene0);
     this.scene.add('Scene1', Scene1);
     this.scene.add('Scene2', Scene2);
